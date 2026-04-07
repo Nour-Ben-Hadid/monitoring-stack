@@ -10,3 +10,4 @@ grafana/dashboards/*.json
 
 #Logs
 *.log
+alertmanager/alertmanager.rendered.yml
