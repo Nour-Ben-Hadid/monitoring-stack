@@ -1,0 +1,12 @@
+#Environment variables
+.env
+
+#Grafana dashboards
+grafana/dashboards/*.json
+!grafana/dashboards/.gitkeep
+
+#OS files
+.DS_Store
+
+#Logs
+*.log
