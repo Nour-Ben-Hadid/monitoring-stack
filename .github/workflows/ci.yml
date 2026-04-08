@@ -17,6 +17,9 @@ jobs:
       - name: Create env file
         run: cp .env.example .env
 
+      - name: Render Alertmanager config
+        run: set -a && source .env && set +a && envsubst < alertmanager/alertmanager.yml > alertmanager/alertmanager.rendered.yml
+
       - name: Validate docker compose syntax
         run: docker compose config -q
 
